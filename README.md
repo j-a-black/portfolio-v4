@@ -1,4 +1,8 @@
-# Getting Started with Create React App
+# About
+
+Website that showcases my personal projects; currently under development.
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
