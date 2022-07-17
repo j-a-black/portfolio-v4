@@ -33,18 +33,27 @@
     text-decoration: none;
     color: white;
     letter-spacing: 1px;
-    transition: 0.2s background-color;
-    -webkit-transition: 0.2s background-color;
-    -moz-transition: 0.2s background-color;
-    -ms-transition: 0.2s background-color;
-    -o-transition: 0.2s background-color;
+    background: linear-gradient(to right, transparent 34%, black 65%);
+    background-size: 300% 100%;
+    background-position: left bottom;
+
     &:first-child {
       border-left: 1px solid $nav-border-color;
     }
 
     &:hover {
-      background-color: #00000080;
+      transition: 0.3s ease-in;
+      -webkit-transition: 0.3s ease-in;
+      -moz-transition: 0.3s ease-in;
+      -ms-transition: 0.3s ease-in;
+      -o-transition: 0.3s ease-in;
+      background-position: right bottom;
+      color: white;
     }
+
+    // &:hover {
+    //   background-color: #f5f5f514;
+    // }
 
     .nav-logo {
       border: 1px solid $nav-border-color;
