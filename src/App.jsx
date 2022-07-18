@@ -1,4 +1,5 @@
 import React from "react";
+import Hero from "./components/hero/hero.component";
 
 import MainNavigationBar from "./components/main-navigation-bar/main-navigation-bar.component";
 
@@ -6,7 +7,7 @@ const App = () => {
   return (
     <div>
       <MainNavigationBar />
-      <h1>This is the App Component</h1>
+      <Hero />
     </div>
   );
 };
