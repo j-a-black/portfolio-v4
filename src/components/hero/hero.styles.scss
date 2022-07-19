@@ -1,8 +1,71 @@
 @import "../../sassStyles/variables";
 
 .hero {
-  height: 80vh;
+  height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+  color: white;
+
+  .hero-text-primary {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    -webkit-transform: translate(-50%, -30%);
+    -moz-transform: translate(-50%, -30%);
+    -ms-transform: translate(-50%, -30%);
+    -o-transform: translate(-50%, -30%);
+
+    h1 {
+      padding: 0 1rem;
+      font-size: 3rem;
+      font-family: $syncopate;
+      font-weight: 100;
+
+      .header-main {
+        display: block;
+        margin-bottom: 1rem;
+        letter-spacing: 0.2rem;
+        font-weight: 600;
+
+        &.top {
+          // font-weight: 500;
+        }
+
+        &.bottom {
+          // font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 530px) {
+  .header-main {
+    padding-left: 2rem;
+    text-align: left;
+    font-size: 4rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header-main {
+    font-size: 6rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .header-main {
+    font-size: 8rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .header-main {
+    font-size: 12rem;
+  }
 }

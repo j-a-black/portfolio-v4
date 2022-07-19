@@ -8,13 +8,13 @@ const MainNavigationBar = () => {
       <div className="nav-content-container">
         <div className="nav-links">
           <a className="nav-link" href="#">
-            About
+            ABOUT
           </a>
           <a className="nav-link" href="#">
             <div className="nav-logo">JB</div>
           </a>
           <a className="nav-link" href="#">
-            Projects
+            PROJECTS
           </a>
         </div>
       </div>

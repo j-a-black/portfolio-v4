@@ -41,8 +41,18 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="hero" style={{ backgroundImage: `url(${imageUrl})` }}>
-      {/* <h1>This is the Hero Component</h1> */}
+    <section
+      className="hero"
+      style={{
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(${imageUrl})`,
+      }}
+    >
+      <div className="hero-text-primary">
+        <h1>
+          <span className="header-main top">Jason Black </span>
+          <span className="header-main bottom">Front-End Web Developer</span>
+        </h1>
+      </div>
     </section>
   );
 };
