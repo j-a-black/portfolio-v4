@@ -1,72 +1,103 @@
 @import "../../sassStyles/variables";
 
-.nav-container {
-  margin: 0 auto;
+.navbar {
   width: 100%;
-  height: 6.4rem;
+  height: 6rem;
+  background-color: white;
   position: fixed;
-  display: grid;
-  place-items: center;
-  border-bottom: 1px solid $nav-border-color;
-  background-color: #000000cb;
-  color: white;
   z-index: 1;
 
-  .nav-content-container {
-    width: 100%;
-    max-width: 120rem;
+  .navbar-container {
+    max-width: 200rem;
     height: inherit;
-    // background-color: green;
-  }
-}
-
-.nav-links {
-  display: flex;
-  height: 100%;
-
-  .nav-link {
-    background-color: none;
-    flex: 1 1 auto;
-    border-right: 1px solid $nav-border-color;
+    margin: 0 auto;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    font-size: 1.8rem;
-    text-decoration: none;
-    color: white;
-    letter-spacing: 1px;
-    background: linear-gradient(to right, transparent 34%, black 65%);
-    background-size: 300% 100%;
-    background-position: left bottom;
-
-    &:first-child {
-      border-left: 1px solid $nav-border-color;
-    }
-
-    &:hover {
-      transition: 0.25s ease-in;
-      -webkit-transition: 0.25s ease-in;
-      -moz-transition: 0.25s ease-in;
-      -ms-transition: 0.25s ease-in;
-      -o-transition: 0.25s ease-in;
-      background-position: right bottom;
-      color: white;
-    }
-
-    .nav-logo {
-      border: 1px solid $nav-border-color;
-      padding: 1rem;
-      border-radius: 50%;
-      -webkit-border-radius: 50%;
-      -moz-border-radius: 50%;
-      -ms-border-radius: 50%;
-      -o-border-radius: 50%;
-    }
   }
-}
 
-@media screen and (min-width: 102.4rem) {
-  .nav-container {
-    height: 8rem;
+  .logo-container {
+    outline: 1px solid black;
+    background-image: url("../../assets/images/JB.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    width: 6rem;
+    height: inherit;
+  }
+
+  .navbar-links-container {
+    width: auto;
+    height: inherit;
+    display: flex;
+    align-items: stretch;
+
+    .navbar-link {
+      padding: 0 12px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 14px;
+      position: relative;
+
+      // underline stroke hover effect
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 0%;
+        // color: transparent;
+        // background: #aaa;
+        height: 3px;
+      }
+
+      &:hover::after {
+        transition: all 0.25s ease-in;
+        -webkit-transition: all 0.25s ease-in;
+        -moz-transition: all 0.25s ease-in;
+        -ms-transition: all 0.25s ease-in;
+        -o-transition: all 0.25s ease-in;
+        width: 100%;
+        background-color: $mahogany;
+      }
+
+      &:hover {
+        transition: color 0.25s ease-in;
+        color: $mahogany;
+        -webkit-transition: color 0.25s ease-in;
+        -moz-transition: color 0.25s ease-in;
+        -ms-transition: color 0.25s ease-in;
+        -o-transition: color 0.25s ease-in;
+      }
+    }
+
+    .active-link {
+      padding: 0 12px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 14px;
+      color: $mahogany;
+      position: relative;
+
+      &:after {
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 100%;
+        background-color: $mahogany;
+      }
+    }
   }
 }

@@ -1,22 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 
 import "./main-navigation-bar.styles.scss";
 
 const MainNavigationBar = () => {
+  const [active, setActive] = useState("");
+
   return (
-    <div className="nav-container">
-      <div className="nav-content-container">
-        <div className="nav-links">
-          <a className="nav-link" href="#">
-            ABOUT
+    <div className="navbar">
+      <div className="navbar-container">
+        <a href="#" className="logo-container"></a>
+        <nav className="navbar-links-container">
+          <a href="#" className="navbar-link">
+            HOME
           </a>
-          <a className="nav-link" href="#">
-            <div className="nav-logo">JB</div>
-          </a>
-          <a className="nav-link" href="#">
+          <a href="#" className="navbar-link">
             PROJECTS
           </a>
-        </div>
+        </nav>
       </div>
     </div>
   );

@@ -41,22 +41,24 @@ const Hero = () => {
   }, []);
 
   return (
-    <section
-      className="hero"
-      style={{
-        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(${imageUrl})`,
-      }}
-    >
-      <div className="hero-text-primary">
-        <h1>
-          <span className="header-main top">Jason Black </span>
-          <span className="header-main bottom">Front-End Web Developer</span>
-        </h1>
-      </div>
+    <section>
+      <div
+        className="hero"
+        style={{
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(${imageUrl})`,
+        }}
+      >
+        <div className="hero-text-primary">
+          <h1>
+            <span className="header-main top">Jason Black </span>
+            <span className="header-main bottom">Front-End Web Developer</span>
+          </h1>
+        </div>
 
-      <p className="callout-box">
-        I make responsive websites using HTML, CSS, JavaScript, and React
-      </p>
+        <p className="callout-box">
+          I make responsive websites using HTML, CSS, JavaScript, and React
+        </p>
+      </div>
     </section>
   );
 };
