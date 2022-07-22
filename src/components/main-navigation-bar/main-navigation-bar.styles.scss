@@ -76,28 +76,5 @@
         -o-transition: color 0.25s ease-in;
       }
     }
-
-    .active-link {
-      padding: 0 12px;
-      font-weight: 700;
-      letter-spacing: 1px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 14px;
-      color: $mahogany;
-      position: relative;
-
-      &:after {
-        content: "";
-        position: absolute;
-        bottom: 0px;
-        left: 0;
-        right: 0;
-        margin: auto;
-        width: 100%;
-        background-color: $mahogany;
-      }
-    }
   }
 }

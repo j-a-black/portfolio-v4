@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 
 import "./hero.styles.scss";
 
-import heroImg280 from "../../assets/images/hero_ll2qqb_c_scale,w_280.webp";
 import heroImg1663 from "../../assets/images/hero_ll2qqb_c_scale,w_1663.webp";
 import heroImg2585 from "../../assets/images/hero_ll2qqb_c_scale,w_2585.webp";
 import heroImg2798 from "../../assets/images/hero_ll2qqb_c_scale,w_2798.webp";
@@ -14,9 +13,7 @@ const Hero = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   const imageUrl =
-    windowWidth <= 280
-      ? heroImg280
-      : windowWidth <= 1663
+    windowWidth <= 1663
       ? heroImg1663
       : windowWidth <= 2585
       ? heroImg2585
@@ -45,22 +42,23 @@ const Hero = () => {
       <div
         className="hero"
         style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(${imageUrl})`,
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url(${imageUrl})`,
         }}
       >
-        <div className="hero-text-primary">
-          <h1>
-            <span className="header-main top">Jason Black </span>
-            <span className="header-main bottom">Front-End Web Developer</span>
+        <div className="hero-content">
+          <h1 className="hero-header">
+            <span className="header-main">Jason Black </span>
+            <span className="header-sub">Front-End Web Developer</span>
           </h1>
+          <span className="callout-box">
+            I make responsive websites using HTML, CSS, JavaScript, and React
+          </span>
         </div>
-
-        <p className="callout-box">
-          I make responsive websites using HTML, CSS, JavaScript, and React
-        </p>
       </div>
     </section>
   );
 };
 
 export default Hero;
+
+//

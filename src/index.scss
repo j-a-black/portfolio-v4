@@ -5,16 +5,15 @@
 *::after {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 62.5%; //10px
 }
 
 body {
   width: 100%;
-  min-height: 100vh;
-  box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
   background-color: white;
   // overflow-x: hidden;
