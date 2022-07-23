@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 
+import ButtonLink from "../button-link/button-link.component";
+
 import "./hero.styles.scss";
 
 import heroImg1663 from "../../assets/images/hero_ll2qqb_c_scale,w_1663.webp";
@@ -50,9 +52,16 @@ const Hero = () => {
             <span className="header-main">Jason Black </span>
             <span className="header-sub">Front-End Web Developer</span>
           </h1>
-          <span className="callout-box">
-            I make responsive websites using HTML, CSS, JavaScript, and React
-          </span>
+          <div className="callout-box">
+            <span>
+              I make responsive websites using HTML, CSS, JavaScript, and React
+            </span>
+            <ButtonLink
+              href="#"
+              buttonText="View Projects"
+              styleClassName="btn position-active"
+            ></ButtonLink>
+          </div>
         </div>
       </div>
     </section>

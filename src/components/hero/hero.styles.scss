@@ -11,22 +11,20 @@
   color: white;
 
   .hero-content {
-    border: 2px dotted red;
+    // border: 2px dotted red;
     padding: 0 0.5rem;
     position: absolute;
     width: 100%;
     max-width: 200rem;
-    min-height: 50%;
+    min-height: 30%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
   }
 
   .hero-header {
     font-family: $italiana;
-    // font-size: 2.2rem;
     font-size: clamp(2.2rem, 7vw, 12rem);
-
+    margin-bottom: clamp(10rem, 7vw, 16rem);
     text-align: center;
     letter-spacing: 0.1rem;
 
@@ -41,22 +39,28 @@
   }
 
   .callout-box {
+    position: relative;
     margin: 0 auto;
-    border: 1px solid white;
-    padding: 2rem 1rem;
+    border: 2px double $mahogany;
+    background-color: rgba(255, 255, 255, 0.156);
+    padding: 3rem 1rem 6rem 1rem;
     width: 100%;
     max-width: 42.5rem;
     display: block;
     font-size: 1.6rem;
     text-align: center;
     letter-spacing: 0.1rem;
+    color: $mahogany;
+
+    span {
+      display: block;
+    }
   }
 }
 
 @media (min-width: 425px) {
   .hero {
     .hero-header {
-      // font-size: 3.5rem;
       text-align: left;
     }
   }

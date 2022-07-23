@@ -1,0 +1,39 @@
+@import "../../sassStyles/variables";
+
+.btn {
+  min-width: 16.5rem;
+  width: 100%;
+  height: 5rem;
+  color: white;
+  font-weight: 500;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  outline: none;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(to right, black 34%, white 65%);
+  background-size: 300% 100%;
+  background-position: left bottom;
+  transition: 200ms ease;
+  -webkit-transition: 200ms ease;
+  -moz-transition: 200ms ease;
+  -ms-transition: 200ms ease;
+  -o-transition: 200ms ease;
+
+  &:hover {
+    background-position: right bottom;
+    color: $mahogany;
+  }
+}
+
+.position-active {
+  position: absolute;
+  max-width: 16.5rem;
+  bottom: -2.5rem;
+  left: 50%;
+  transform: translate(-50%, 0rem);
+  -webkit-transform: translate(-50%, 0rem);
+  -moz-transform: translate(-50%, 0rem);
+  -ms-transform: translate(-50%, 0rem);
+  -o-transform: translate(-50%, 0rem);
+}
