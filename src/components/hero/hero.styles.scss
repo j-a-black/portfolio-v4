@@ -2,7 +2,7 @@
 
 .hero {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -16,7 +16,7 @@
     position: absolute;
     width: 100%;
     max-width: 200rem;
-    height: 50%;
+    min-height: 50%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -24,7 +24,9 @@
 
   .hero-header {
     font-family: $italiana;
-    font-size: 2.2rem;
+    // font-size: 2.2rem;
+    font-size: clamp(2.2rem, 7vw, 12rem);
+
     text-align: center;
     letter-spacing: 0.1rem;
 
@@ -54,60 +56,61 @@
 @media (min-width: 425px) {
   .hero {
     .hero-header {
-      font-size: 3.5rem;
+      // font-size: 3.5rem;
       text-align: left;
     }
   }
 }
 
-@media (min-width: 540px) {
-  .hero {
-    .hero-header {
-      font-size: 4.5rem;
-      text-align: left;
-    }
+// @media (min-width: 540px) {
+//   .hero {
+//     .hero-header {
+//       font-size: 4.5rem;
+//       text-align: left;
+//     }
 
-    .callout-box {
-      font-size: 2rem;
-    }
-  }
-}
+//     .callout-box {
+//       font-size: 2rem;
+//     }
+//   }
+// }
 
-@media (min-width: 768px) {
-  .hero {
-    .hero-header {
-      font-size: 6rem;
-      text-align: left;
-    }
+// @media (min-width: 768px) {
+//   .hero {
+//     .hero-header {
+//       font-size: 6rem;
+//       text-align: left;
+//     }
 
-    .callout-box {
-      font-size: 2rem;
-    }
-  }
-}
+//     .callout-box {
+//       font-size: 2rem;
+//     }
+//   }
+// }
 
-@media (min-width: 1024px) {
-  .hero {
-    .hero-header {
-      font-size: 9rem;
-      text-align: left;
-    }
+// @media (min-width: 1024px) {
+//   .hero {
+//     .hero-header {
+//       font-size: 9rem;
+//       text-align: left;
+//     }
 
-    .callout-box {
-      font-size: 2rem;
-    }
-  }
-}
+//     .callout-box {
+//       font-size: 2rem;
+//     }
+//   }
+// }
 
-@media (min-width: 1440px) {
-  .hero {
-    .hero-header {
-      font-size: 12rem;
-      text-align: left;
-    }
+// @media (min-width: 1440px) {
+//   .hero {
+//     .hero-header {
+//       font-size: 12rem;
+//       text-align: left;
+//     }
 
-    .callout-box {
-      font-size: 3rem;
-    }
-  }
-}
+//     .callout-box {
+//       font-size: 3rem;
+//       max-width: 50rem;
+//     }
+//   }
+// }
