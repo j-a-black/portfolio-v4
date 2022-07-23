@@ -2,49 +2,44 @@ import React, { useState, useEffect } from "react";
 
 import ButtonLink from "../button-link/button-link.component";
 
+import heroImage from "../../assets/images/hero2.webp";
+
 import "./hero.styles.scss";
 
-import heroImg1663 from "../../assets/images/hero_ll2qqb_c_scale,w_1663.webp";
-import heroImg2585 from "../../assets/images/hero_ll2qqb_c_scale,w_2585.webp";
-import heroImg2798 from "../../assets/images/hero_ll2qqb_c_scale,w_2798.webp";
-import heroImg3251 from "../../assets/images/hero_ll2qqb_c_scale,w_3251.webp";
-import heroImg3692 from "../../assets/images/hero_ll2qqb_c_scale,w_3692.webp";
-import heroImg3840 from "../../assets/images/hero_ll2qqb_c_scale,w_3840.webp";
-
 const Hero = () => {
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  // const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
-  const imageUrl =
-    windowWidth <= 1663
-      ? heroImg1663
-      : windowWidth <= 2585
-      ? heroImg2585
-      : windowWidth <= 2798
-      ? heroImg2798
-      : windowWidth <= 3251
-      ? heroImg3251
-      : windowWidth <= 3692
-      ? heroImg3692
-      : heroImg3840;
+  // const imageUrl =
+  //   windowWidth <= 1663
+  //     ? heroImg1663
+  //     : windowWidth <= 2585
+  //     ? heroImg2585
+  //     : windowWidth <= 2798
+  //     ? heroImg2798
+  //     : windowWidth <= 3251
+  //     ? heroImg3251
+  //     : windowWidth <= 3692
+  //     ? heroImg3692
+  //     : heroImg3840;
 
-  useEffect(() => {
-    const handleWindowResize = () => {
-      setWindowWidth(window.innerWidth);
-    };
+  // useEffect(() => {
+  //   const handleWindowResize = () => {
+  //     setWindowWidth(window.innerWidth);
+  //   };
 
-    window.addEventListener("resize", handleWindowResize);
+  //   window.addEventListener("resize", handleWindowResize);
 
-    return () => {
-      window.removeEventListener("resize", handleWindowResize);
-    };
-  }, []);
+  //   return () => {
+  //     window.removeEventListener("resize", handleWindowResize);
+  //   };
+  // }, []);
 
   return (
     <section>
       <div
         className="hero"
         style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url(${imageUrl})`,
+          backgroundImage: `url(${heroImage})`,
         }}
       >
         <div className="hero-content">
@@ -70,4 +65,4 @@ const Hero = () => {
 
 export default Hero;
 
-//
+// linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))
