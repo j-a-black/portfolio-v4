@@ -1,6 +1,24 @@
+@import "../../sassStyles/variables";
+
 .container {
+  border: 1px solid red;
   width: 100%;
   max-width: 144rem;
   min-height: 100vh;
   margin: 0 auto;
+  padding: 8rem 0.5rem;
+
+  .section-header {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: $italiana;
+    font-size: clamp(3.2rem, 5vw, 4rem);
+    letter-spacing: 0.2rem;
+    color: $mahogany;
+    margin-bottom: 4rem;
+  }
+
+  .section-content {
+    font-size: 1.6rem;
+  }
 }

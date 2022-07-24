@@ -7,7 +7,9 @@ import "./projects.styles.scss";
 const Projects = () => {
   return (
     <>
-      <SectionContainer></SectionContainer>
+      <SectionContainer header="projects">
+        <p>Before we noticed, we leaped</p>
+      </SectionContainer>
     </>
   );
 };
