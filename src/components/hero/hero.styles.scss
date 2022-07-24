@@ -43,6 +43,7 @@
 
     .header-sub {
       display: block;
+      color: gold;
     }
   }
 
@@ -51,11 +52,12 @@
     margin: 0 auto;
     border: 2px groove gold;
     // background-color: rgba(255, 255, 255, 0.156);
-    padding: 3rem 1rem 6rem 1rem;
+    // padding: 6rem 1rem;
+    padding: clamp(3rem, 2vw, 6rem) 1rem;
     width: 100%;
-    max-width: 42.5rem;
+    max-width: 60rem;
     display: block;
-    font-size: 1.6rem;
+    font-size: clamp(1.6rem, 2.5vw, 2rem);
     text-align: center;
     letter-spacing: 0.1rem;
     color: white;
