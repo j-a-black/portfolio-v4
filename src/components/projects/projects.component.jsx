@@ -1,4 +1,5 @@
 import React from "react";
+import ProjectsList from "../projects-list/projects-list.component";
 
 import SectionContainer from "../section-container/section-container.component";
 
@@ -7,8 +8,8 @@ import "./projects.styles.scss";
 const Projects = () => {
   return (
     <>
-      <SectionContainer header="projects">
-        <p>Before we noticed, we leaped</p>
+      <SectionContainer header="projects" idSelector="projects">
+        <ProjectsList />
       </SectionContainer>
     </>
   );

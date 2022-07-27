@@ -6,6 +6,7 @@
   background-color: white;
   position: fixed;
   z-index: 1;
+  border-bottom: 1px solid $grayscale-80;
 
   .navbar-container {
     max-width: 200rem;
@@ -17,7 +18,8 @@
   }
 
   .logo-container {
-    outline: 1px solid black;
+    border-left: 1px solid $grayscale-80;
+    border-right: 1px solid $grayscale-80;
     background-image: url("../../assets/images/JB.png");
     background-position: center;
     background-repeat: no-repeat;

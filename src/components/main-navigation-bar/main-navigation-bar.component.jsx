@@ -12,7 +12,7 @@ const MainNavigationBar = () => {
             ABOUT
           </a>
           <a
-            href="#"
+            href="#projects"
             className="
           navbar-link"
           >

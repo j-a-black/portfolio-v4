@@ -52,7 +52,7 @@ const Hero = () => {
               I make responsive websites using HTML, CSS, JavaScript, and React
             </span>
             <ButtonLink
-              href="#"
+              href="#projects"
               buttonText="View Projects"
               styleClassName="btn position-active"
             ></ButtonLink>
