@@ -11,7 +11,8 @@
   outline: none;
   display: grid;
   place-items: center;
-  background: linear-gradient(to right, black 34%, white 65%);
+  // background: linear-gradient(to right, black 34%, white 65%);
+  background: linear-gradient(to right, black 34%, #640a0a 65%);
   background-size: 300% 100%;
   background-position: left bottom;
   transition: 200ms ease;
@@ -22,7 +23,8 @@
 
   &:hover {
     background-position: right bottom;
-    color: $mahogany;
+    // color: $mahogany;
+    // border: 1px solid black;
   }
 }
 
