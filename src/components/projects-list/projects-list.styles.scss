@@ -1,5 +1,7 @@
+@import "../../sassStyles/variables";
+
 .project-card {
-  border: 1px solid green;
+  // border: 1px solid green;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -8,6 +10,12 @@
   .card-image {
     width: 100%;
     flex: 1 1 30rem;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   }
 
   .card-content {
@@ -15,18 +23,50 @@
     height: auto;
     flex: 1 1 30rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 
     .card-meta {
-      font-size: clamp(2.2rem, 5vw, 4rem);
+      font-size: clamp(2.2rem, 5vw, 7rem);
       padding-right: 1rem;
       font-weight: 600;
       color: red;
+
+      span {
+        display: inline-block;
+        transform: rotate(-90deg);
+        -webkit-transform: rotate(-90deg);
+        -moz-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        -o-transform: rotate(-90deg);
+      }
     }
 
-    .card-description > * {
+    .card-description {
+      .description-title {
+        font-family: $italiana;
+        font-size: clamp(1.9rem, 5vw, 5rem);
+        letter-spacing: 0.3rem;
+        margin-bottom: clamp(1rem, 2.5vw, 1.8rem);
+      }
+
+      .description-content {
+        margin-bottom: clamp(1rem, 2.5vw, 1.8rem);
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .card-content {
+    flex-direction: column;
+
+    .card-meta {
+      border-bottom: 2px solid red;
       margin-bottom: 2rem;
-      padding: 0.5rem;
+
+      span {
+        margin-bottom: 4rem;
+      }
     }
   }
 }

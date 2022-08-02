@@ -13,9 +13,11 @@ const ProjectsList = () => {
         <img src={ShoppeImage} alt="" />
       </div>
       <div className="card-content">
-        <div className="card-meta">01</div>
+        <div className="card-meta">
+          <span>01</span>
+        </div>
         <div className="card-description">
-          <h3 className="description-title">Shopping Card</h3>
+          <h3 className="description-title">Shopping Cart</h3>
           <div className="description-content">
             <span>
               This application takes a single ingredient provided by the user
