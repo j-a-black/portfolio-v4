@@ -15,6 +15,7 @@ const Projects = () => {
             <ProjectsList
               key={item.id}
               projectNumber={item.projectNumber}
+              color={item.color}
               imgSrc={item.imgSrc}
               title={item.title}
               description={item.description}

@@ -7,6 +7,7 @@ export const data = [
   {
     id: 1,
     projectNumber: "01",
+    color: "red",
     imgSrc: dashboardImage,
     title: "Covid-19 Statistic Dashboard",
     description:
@@ -17,6 +18,7 @@ export const data = [
   {
     id: 2,
     projectNumber: "02",
+    color: "green",
     imgSrc: recipeImage,
     title: "Recipe Search App",
     description:
@@ -27,6 +29,7 @@ export const data = [
   {
     id: 3,
     projectNumber: "03",
+    color: "purple",
     imgSrc: shoppeImage,
     title: "Shopping Cart",
     description:
@@ -37,6 +40,7 @@ export const data = [
   {
     id: 4,
     projectNumber: "04",
+    color: "blue",
     imgSrc: brochureImage,
     title: "Brochure Website",
     description: "Landing page for a fictitious private catering company.",

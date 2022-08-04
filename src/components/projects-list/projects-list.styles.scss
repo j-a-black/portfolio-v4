@@ -6,11 +6,11 @@
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
-  margin-bottom: clamp(2rem, 5vw, 12rem);
+  margin-bottom: clamp(3rem, 5vw, 12rem);
 
   .card-image {
     width: 100%;
-    flex: 1 1 30rem;
+    flex: 2 1 30rem;
 
     img {
       width: 100%;
@@ -30,7 +30,7 @@
       font-size: clamp(2.2rem, 5vw, 7rem);
       padding-right: 1rem;
       font-weight: 600;
-      color: red;
+      border-bottom-style: none;
 
       span {
         display: inline-block;
@@ -78,7 +78,6 @@
     flex-direction: column;
 
     .card-meta {
-      border-bottom: 2px solid red;
       margin-bottom: 2rem;
 
       span {
