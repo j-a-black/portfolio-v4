@@ -1,33 +1,46 @@
 import React from "react";
 
-import ShoppeImage from "../../assets/images/shoppe.webp";
-
 import ButtonLink from "../../components/button-link/button-link.component";
 
 import "./projects-list.styles.scss";
 
-const ProjectsList = () => {
+const ProjectsList = ({
+  projectNumber,
+  imgSrc,
+  title,
+  description,
+  projectLink,
+  gitHubLink,
+}) => {
   return (
     <div className="project-card">
       <div className="card-image">
-        <img src={ShoppeImage} alt="" />
+        <img src={imgSrc} alt={title} />
       </div>
       <div className="card-content">
         <div className="card-meta">
-          <span>01</span>
+          <span>{projectNumber}</span>
         </div>
         <div className="card-description">
-          <h3 className="description-title">Shopping Cart</h3>
+          <h3 className="description-title">{title}</h3>
           <div className="description-content">
-            <span>
-              This application takes a single ingredient provided by the user
-              and finds recipes that include the specified ingredient. A split
-              screen layout is used to dynamically render recipe results and
-              specific information such as ingredients, cooking instructions,
-              and a link to a video with additional guidance.
-            </span>
+            <span>{description}</span>
           </div>
-          <ButtonLink buttonText="View Project" styleClassName="btn" />
+          <ButtonLink
+            buttonText="View Project"
+            href={projectLink}
+            styleClassName="btn"
+            target="_blank"
+            rel="noopener noreferrer"
+          />
+          <br />
+          <ButtonLink
+            buttonText="View Code"
+            href={gitHubLink}
+            styleClassName="btn"
+            target="_blank"
+            rel="noopener noreferrer"
+          />
         </div>
       </div>
     </div>
