@@ -6,6 +6,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
+  margin-bottom: clamp(2rem, 5vw, 12rem);
 
   .card-image {
     width: 100%;
@@ -54,6 +55,22 @@
       }
     }
   }
+}
+
+.product-card:last-child {
+  margin-bottom: 0;
+}
+
+@media (min-width: 630px) {
+  .project-card:nth-of-type(even) {
+    .card-content {
+      order: -1;
+    }
+  }
+
+  // .card-content:nth-of-type(even) {
+  //   order: -1;
+  // }
 }
 
 @media (min-width: 1024px) {
