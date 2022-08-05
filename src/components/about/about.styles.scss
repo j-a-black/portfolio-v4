@@ -21,9 +21,9 @@
     text-align: center;
     text-transform: uppercase;
     font-family: $italiana;
-    font-size: clamp(1.9rem, 5vw, 6rem);
-    letter-spacing: 0.3rem;
-    color: $grayscale-50;
+    font-size: clamp(4rem, 5vw, 9rem);
+    letter-spacing: clamp(0.1rem, 2vw, 2rem);
+    color: rgb(186, 75, 75);
     margin-bottom: 4rem;
   }
 
