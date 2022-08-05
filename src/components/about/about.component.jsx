@@ -17,6 +17,9 @@ const About = () => {
             browsers.
           </div>
         </div>
+        <div className="bottom-banner" id="projects">
+          portfolio
+        </div>
       </div>
     </section>
   );

@@ -10,6 +10,7 @@
   margin-top: 2rem;
   display: grid;
   place-items: center;
+  position: relative;
 
   .about-content {
     width: 100%;
@@ -22,7 +23,7 @@
     font-family: $italiana;
     font-size: clamp(1.9rem, 5vw, 6rem);
     letter-spacing: 0.3rem;
-    color: $grayscale-60;
+    color: $grayscale-50;
     margin-bottom: 4rem;
   }
 
@@ -32,5 +33,22 @@
     color: $grayscale-60;
     font-weight: 200;
     padding: 0 2rem;
+  }
+
+  .bottom-banner {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    bottom: 0%;
+    transform: translate(0, 27%);
+    font-family: $italiana;
+    font-size: clamp(4rem, 7vw, 50rem);
+    letter-spacing: clamp(0.1rem, 2.5vw, 5rem);
+    color: white;
+    text-transform: uppercase;
+    -webkit-transform: translate(0, 27%);
+    -moz-transform: translate(0, 27%);
+    -ms-transform: translate(0, 27%);
+    -o-transform: translate(0, 27%);
   }
 }

@@ -9,7 +9,7 @@ import "./projects.styles.scss";
 const Projects = () => {
   return (
     <>
-      <SectionContainer header="projects" idSelector="projects">
+      <SectionContainer>
         {data.map((item) => {
           return (
             <ProjectsList
