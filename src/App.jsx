@@ -12,7 +12,7 @@ const App = () => {
     <>
       <MainNavigationBar />
       <Hero />
-      {/* <About /> */}
+      <About />
       <Projects />
     </>
   );

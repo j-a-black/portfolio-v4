@@ -1,3 +1,36 @@
-.about {
+@import "../../sassStyles/variables";
+
+#about {
+  padding: clamp(2rem, 5vw, 4rem);
+}
+.about-container {
+  width: 100%;
   min-height: 100vh;
+  background-color: $grayscale-90;
+  margin-top: 2rem;
+  display: grid;
+  place-items: center;
+
+  .about-content {
+    width: 100%;
+    max-width: 102.4rem;
+  }
+
+  .about-header {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: $italiana;
+    font-size: clamp(1.9rem, 5vw, 6rem);
+    letter-spacing: 0.3rem;
+    color: $grayscale-60;
+    margin-bottom: 4rem;
+  }
+
+  .about-description {
+    font-size: clamp(2rem, 2.5vw, 4.2rem);
+    text-align: center;
+    color: $grayscale-60;
+    font-weight: 200;
+    padding: 0 2rem;
+  }
 }

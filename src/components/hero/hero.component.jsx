@@ -35,7 +35,7 @@ const Hero = () => {
   // }, []);
 
   return (
-    <section>
+    <section id="home">
       <div
         className="hero"
         style={{

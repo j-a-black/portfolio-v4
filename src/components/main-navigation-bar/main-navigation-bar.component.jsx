@@ -6,9 +6,9 @@ const MainNavigationBar = () => {
   return (
     <div className="navbar">
       <div className="navbar-container">
-        <a href="#" className="logo-container"></a>
+        <a href="#home" className="logo-container"></a>
         <nav className="navbar-links-container">
-          <a href="#" className="navbar-link">
+          <a href="#about" className="navbar-link">
             ABOUT
           </a>
           <a
