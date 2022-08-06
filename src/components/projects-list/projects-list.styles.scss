@@ -9,13 +9,43 @@
   margin-bottom: clamp(3rem, 5vw, 12rem);
 
   .card-image {
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    -webkit-box-shadow: 0px 10px 13px -7px #000000,
+      5px 5px 15px 5px rgba(0, 0, 0, 0);
     width: 100%;
     flex: 2 1 30rem;
+    overflow: hidden;
+    transition: transform 0.5s ease-in;
+    -webkit-transition: transform 0.5s ease-in;
+    -moz-transition: transform 0.5s ease-in;
+    -ms-transition: transform 0.5s ease-in;
+    -o-transition: transform 0.5s ease-in;
+
+    &:hover {
+      transform: scale(0.95);
+      -webkit-transform: scale(0.95);
+      -moz-transform: scale(0.95);
+      -ms-transform: scale(0.95);
+      -o-transform: scale(0.95);
+    }
 
     img {
       width: 100%;
       height: 100%;
       object-fit: cover;
+      transition: transform 0.5s ease-in;
+      -webkit-transition: transform 0.5s ease-in;
+      -moz-transition: transform 0.5s ease-in;
+      -ms-transition: transform 0.5s ease-in;
+      -o-transition: transform 0.5s ease-in;
+
+      &:hover {
+        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+      }
     }
   }
 
@@ -67,10 +97,6 @@
       order: -1;
     }
   }
-
-  // .card-content:nth-of-type(even) {
-  //   order: -1;
-  // }
 }
 
 @media (min-width: 1024px) {

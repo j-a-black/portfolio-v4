@@ -42,7 +42,6 @@ const ProjectsList = ({
               ? `2px solid ${color}`
               : "2px solid white",
           }}
-          // {displayBorderBottom ? (style={{ borderBottom: `2px solid ${color}` }}) : null}
         >
           <span style={{ color: `${color}` }}>{projectNumber}</span>
         </div>
