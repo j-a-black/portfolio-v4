@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 import "./main-navigation-bar.styles.scss";
 
@@ -6,7 +6,9 @@ const MainNavigationBar = () => {
   return (
     <div className="navbar">
       <div className="navbar-container">
-        <a href="#home" className="logo-container"></a>
+        <a href="#home" className="logo-container">
+          home
+        </a>
         <nav className="navbar-links-container">
           <a href="#about" className="navbar-link">
             ABOUT

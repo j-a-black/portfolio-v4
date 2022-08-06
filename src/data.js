@@ -1,7 +1,7 @@
-import dashboardImage from "./assets/images/dashboard.webp";
-import recipeImage from "./assets/images/mealify.webp";
-import shoppeImage from "./assets/images/shoppe.webp";
-import brochureImage from "./assets/images/brochure.webp";
+import dashboardImage from "./assets/images/dashboard,w_885.webp";
+import recipeImage from "./assets/images/mealify,w_955.webp";
+import shoppeImage from "./assets/images/shoppe,w_935.webp";
+import brochureImage from "./assets/images/brochure,w_938.webp";
 
 export const data = [
   {
@@ -44,7 +44,7 @@ export const data = [
     imgSrc: brochureImage,
     title: "Brochure Website",
     description: "Landing page for a fictitious private catering company.",
-    projectLink: "https://dashboard.jasonanthonblack.com/",
+    projectLink: "https://oceansidecatering.jasonanthonblack.com//",
     gitHubLink: "https://github.com/j-a-black/seaside-catering-cra",
   },
 ];

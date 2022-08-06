@@ -8,7 +8,7 @@ import "./projects.styles.scss";
 
 const Projects = () => {
   return (
-    <>
+    <section>
       <SectionContainer>
         {data.map((item) => {
           return (
@@ -25,7 +25,7 @@ const Projects = () => {
           );
         })}
       </SectionContainer>
-    </>
+    </section>
   );
 };
 

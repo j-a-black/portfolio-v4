@@ -1,36 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import ButtonLink from "../button-link/button-link.component";
 import heroImage from "../../assets/images/hero2.webp";
 import "./hero.styles.scss";
 
 const Hero = () => {
-  // const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-
-  // const imageUrl =
-  //   windowWidth <= 1663
-  //     ? heroImg1663
-  //     : windowWidth <= 2585
-  //     ? heroImg2585
-  //     : windowWidth <= 2798
-  //     ? heroImg2798
-  //     : windowWidth <= 3251
-  //     ? heroImg3251
-  //     : windowWidth <= 3692
-  //     ? heroImg3692
-  //     : heroImg3840;
-
-  // useEffect(() => {
-  //   const handleWindowResize = () => {
-  //     setWindowWidth(window.innerWidth);
-  //   };
-
-  //   window.addEventListener("resize", handleWindowResize);
-
-  //   return () => {
-  //     window.removeEventListener("resize", handleWindowResize);
-  //   };
-  // }, []);
-
   return (
     <section id="home">
       <div
@@ -61,5 +34,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
-// linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))
