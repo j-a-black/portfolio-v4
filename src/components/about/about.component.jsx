@@ -1,5 +1,4 @@
 import React from "react";
-import SectionContainer from "../section-container/section-container.component";
 
 import "./about.styles.scss";
 

@@ -9,12 +9,13 @@
   margin-bottom: clamp(3rem, 5vw, 12rem);
 
   .card-image {
-    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
-    -webkit-box-shadow: 0px 10px 13px -7px #000000,
-      5px 5px 15px 5px rgba(0, 0, 0, 0);
     width: 100%;
     flex: 2 1 30rem;
     overflow: hidden;
+    box-shadow: 0px 1rem 1.3rem -0.7rem #000000,
+      0.5rem 0.5rem 1.5rem 0.5rem rgba(0, 0, 0, 0);
+    -webkit-box-shadow: 0px 1rem 1.3rem -0.7rem #000000,
+      0.5rem 0.5rem 1.5rem 0.5rem rgba(0, 0, 0, 0);
     transition: transform 0.5s ease-in;
     -webkit-transition: transform 0.5s ease-in;
     -moz-transition: transform 0.5s ease-in;

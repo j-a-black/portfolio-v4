@@ -1,9 +1,6 @@
 import React, { useState, useEffect } from "react";
-
 import ButtonLink from "../button-link/button-link.component";
-
 import heroImage from "../../assets/images/hero2.webp";
-
 import "./hero.styles.scss";
 
 const Hero = () => {
