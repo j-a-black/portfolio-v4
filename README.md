@@ -2,6 +2,8 @@
 
 Website that showcases my personal projects; currently under development.
 
+![Landing Page](/src/assets/images/screencapture.webp?raw=true)
+
 ## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
